@@ -1,7 +1,6 @@
 eq:binom
 fig:nice-fig
 tab:nice-tab
-thm:tri
 about
 usage
 render-book
@@ -23,4 +22,3 @@ sharing-your-book
 publishing
 pages
 metadata-for-sharing
-cover-image-path-to-the-social-sharing-image-like-imagescover.jpg
