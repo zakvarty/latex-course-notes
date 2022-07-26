@@ -4,18 +4,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Page not found | Learn LaTeX</title>
+<title>Chapter 6 Beamer Presentations | Learn LaTeX</title>
 <meta name="author" content="Zak Varty">
-<meta name="description" content="The page you requested cannot be found (perhaps it was moved or renamed). You may want to try searching to find the page's new location, or use the table of contents to find the page you are...">
+<meta name="description" content="6.1 The beamer document class   6.2 Presentation Specific Commands \pause \alert block and exampleblock aspect ratio of slides  6.3 Adding white space adding space between bullet points vertical...">
 <meta name="generator" content="bookdown 0.26 with bs4_book()">
-<meta property="og:title" content="Page not found | Learn LaTeX">
+<meta property="og:title" content="Chapter 6 Beamer Presentations | Learn LaTeX">
 <meta property="og:type" content="book">
-<meta property="og:url" content="https://latex-notes.zakvarty.com/404.html">
+<meta property="og:url" content="https://latex-notes.zakvarty.com/beamer-presentations.html">
 <meta property="og:image" content="https://latex-notes.zakvarty.com/images/learn-latex-logo.jpg">
-<meta property="og:description" content="The page you requested cannot be found (perhaps it was moved or renamed). You may want to try searching to find the page's new location, or use the table of contents to find the page you are...">
+<meta property="og:description" content="6.1 The beamer document class   6.2 Presentation Specific Commands \pause \alert block and exampleblock aspect ratio of slides  6.3 Adding white space adding space between bullet points vertical...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Page not found | Learn LaTeX">
-<meta name="twitter:description" content="The page you requested cannot be found (perhaps it was moved or renamed). You may want to try searching to find the page's new location, or use the table of contents to find the page you are...">
+<meta name="twitter:title" content="Chapter 6 Beamer Presentations | Learn LaTeX">
+<meta name="twitter:description" content="6.1 The beamer document class   6.2 Presentation Specific Commands \pause \alert block and exampleblock aspect ratio of slides  6.3 Adding white space adding space between bullet points vertical...">
 <meta name="twitter:image" content="https://latex-notes.zakvarty.com/images/learn-latex-logo.jpg">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -54,7 +54,7 @@
 <li><a class="" href="figures-tables-and-diagrams.html"><span class="header-section-number">4</span> Figures, Tables and Diagrams</a></li>
 <li><a class="" href="structure-1.html"><span class="header-section-number">5</span> Structure</a></li>
 <li class="book-part">Part II - Presentations</li>
-<li><a class="" href="beamer-presentations.html"><span class="header-section-number">6</span> Beamer Presentations</a></li>
+<li><a class="active" href="beamer-presentations.html"><span class="header-section-number">6</span> Beamer Presentations</a></li>
 <li class="book-part">Part III - Posters</li>
 <li><a class="" href="beamer-posters.html"><span class="header-section-number">7</span> Beamer Posters</a></li>
 <li><a class="" href="references.html">References</a></li>
@@ -65,18 +65,106 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="page-not-found" class="section level1">
-<h1>Page not found<a class="anchor" aria-label="anchor" href="#page-not-found"><i class="fas fa-link"></i></a>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="beamer-presentations" class="section level1" number="6">
+<h1>
+<span class="header-section-number">6</span> Beamer Presentations<a class="anchor" aria-label="anchor" href="#beamer-presentations"><i class="fas fa-link"></i></a>
 </h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="the-beamer-document-class" class="section level2" number="6.1">
+<h2>
+<span class="header-section-number">6.1</span> The <code>beamer</code> document class<a class="anchor" aria-label="anchor" href="#the-beamer-document-class"><i class="fas fa-link"></i></a>
+</h2>
 </div>
+<div id="presentation-specific-commands" class="section level2" number="6.2">
+<h2>
+<span class="header-section-number">6.2</span> Presentation Specific Commands<a class="anchor" aria-label="anchor" href="#presentation-specific-commands"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li><code>\pause</code></li>
+<li><code>\alert</code></li>
+<li>block and exampleblock</li>
+<li>aspect ratio of slides</li>
+</ul>
+</div>
+<div id="adding-white-space" class="section level2" number="6.3">
+<h2>
+<span class="header-section-number">6.3</span> Adding white space<a class="anchor" aria-label="anchor" href="#adding-white-space"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>adding space between bullet points</li>
+<li>vertical and horizonal whitespace</li>
+<li>easy to lose a lot of time here, add all content first then sort spacing</li>
+</ul>
+</div>
+<div id="multi-column-slides" class="section level2" number="6.4">
+<h2>
+<span class="header-section-number">6.4</span> Multi-column Slides<a class="anchor" aria-label="anchor" href="#multi-column-slides"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>columns</li>
+<li>example left image slide</li>
+<li>example right image slide</li>
+</ul>
+</div>
+<div id="animations" class="section level2" number="6.5">
+<h2>
+<span class="header-section-number">6.5</span> Animations<a class="anchor" aria-label="anchor" href="#animations"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>From GIF</li>
+<li>From pdf
+<ul>
+<li>with buttons</li>
+<li>without buttons</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="video" class="section level2" number="6.6">
+<h2>
+<span class="header-section-number">6.6</span> Video<a class="anchor" aria-label="anchor" href="#video"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>From the internet</li>
+<li>Local</li>
+</ul>
+</div>
+<div id="links-to-slide-templates" class="section level2" number="6.7">
+<h2>
+<span class="header-section-number">6.7</span> Links to slide templates<a class="anchor" aria-label="anchor" href="#links-to-slide-templates"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>Include basic beamer template</li>
+<li>Overleaf</li>
+</ul>
+</div>
+</div>
+
+
+
   <div class="chapter-nav">
-<div class="empty"></div>
-<div class="empty"></div>
+<div class="prev"><a href="structure-1.html"><span class="header-section-number">5</span> Structure</a></div>
+<div class="next"><a href="beamer-posters.html"><span class="header-section-number">7</span> Beamer Posters</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
-    </div>
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#beamer-presentations"><span class="header-section-number">6</span> Beamer Presentations</a></li>
+<li><a class="nav-link" href="#the-beamer-document-class"><span class="header-section-number">6.1</span> The beamer document class</a></li>
+<li><a class="nav-link" href="#presentation-specific-commands"><span class="header-section-number">6.2</span> Presentation Specific Commands</a></li>
+<li><a class="nav-link" href="#adding-white-space"><span class="header-section-number">6.3</span> Adding white space</a></li>
+<li><a class="nav-link" href="#multi-column-slides"><span class="header-section-number">6.4</span> Multi-column Slides</a></li>
+<li><a class="nav-link" href="#animations"><span class="header-section-number">6.5</span> Animations</a></li>
+<li><a class="nav-link" href="#video"><span class="header-section-number">6.6</span> Video</a></li>
+<li><a class="nav-link" href="#links-to-slide-templates"><span class="header-section-number">6.7</span> Links to slide templates</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/zakvarty/latex-course-notes/blob/master/06-presentations.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/zakvarty/latex-course-notes/edit/master/06-presentations.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
 
 </div>
 </div> <!-- .container -->

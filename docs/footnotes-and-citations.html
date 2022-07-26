@@ -67,9 +67,10 @@
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
 <li><a class="" href="index.html"><span class="header-section-number">1</span> About</a></li>
-<li><a class="" href="hello-bookdown.html"><span class="header-section-number">2</span> Hello bookdown</a></li>
-<li><a class="" href="cross.html"><span class="header-section-number">3</span> Cross-references</a></li>
-<li><a class="" href="parts.html"><span class="header-section-number">4</span> Parts</a></li>
+<li class="book-part">Part I</li>
+<li><a class="" href="getting-started.html"><span class="header-section-number">2</span> Getting started</a></li>
+<li><a class="" href="text.html"><span class="header-section-number">3</span> Hello World! LaTeX Text</a></li>
+<li><a class="" href="beautiful-math-in-latex.html"><span class="header-section-number">4</span> Beautiful Math in LaTeX</a></li>
 <li><a class="active" href="footnotes-and-citations.html"><span class="header-section-number">5</span> Footnotes and citations</a></li>
 <li><a class="" href="blocks.html"><span class="header-section-number">6</span> Blocks</a></li>
 <li><a class="" href="sharing-your-book.html"><span class="header-section-number">7</span> Sharing your book</a></li>
@@ -91,9 +92,9 @@
 </h2>
 <p>Footnotes are put inside the square brackets after a caret <code>^[]</code>. Like this one <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content="&lt;p&gt;This is a footnote.&lt;/p&gt;"><sup>1</sup></a>.</p>
 </div>
-<div id="citations" class="section level2" number="5.2">
+<div id="citations-1" class="section level2" number="5.2">
 <h2>
-<span class="header-section-number">5.2</span> Citations<a class="anchor" aria-label="anchor" href="#citations"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.2</span> Citations<a class="anchor" aria-label="anchor" href="#citations-1"><i class="fas fa-link"></i></a>
 </h2>
 <p>Reference items in your bibliography file(s) using <code>@key</code>.</p>
 <p>For example, we are using the <strong>bookdown</strong> package<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Yihui Xie, &lt;em&gt;Bookdown: Authoring Books and Technical Documents with r Markdown&lt;/em&gt;, 2022, &lt;a href="https://CRAN.R-project.org/package=bookdown" role="doc-biblioref"&gt;https://CRAN.R-project.org/package=bookdown&lt;/a&gt;.&lt;/p&gt;'><sup>2</sup></a></span> (check out the last code chunk in index.Rmd to see how this citation key was added) in this sample book, which was built on top of R Markdown and <strong>knitr</strong><span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Yihui Xie, &lt;em&gt;Dynamic Documents with &lt;span&gt;R&lt;/span&gt; and Knitr&lt;/em&gt;, 2nd ed. (Boca Raton, Florida: Chapman; Hall/CRC, 2015), &lt;a href="http://yihui.org/knitr/" role="doc-biblioref"&gt;http://yihui.org/knitr/&lt;/a&gt;.&lt;/p&gt;'><sup>3</sup></a></span> (this citation was added manually in an external file book.bib).
@@ -105,14 +106,14 @@ Note that the <code>.bib</code> files need to be listed in the index.Rmd with th
 </div>
 
   <div class="chapter-nav">
-<div class="prev"><a href="parts.html"><span class="header-section-number">4</span> Parts</a></div>
+<div class="prev"><a href="beautiful-math-in-latex.html"><span class="header-section-number">4</span> Beautiful Math in LaTeX</a></div>
 <div class="next"><a href="blocks.html"><span class="header-section-number">6</span> Blocks</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#footnotes-and-citations"><span class="header-section-number">5</span> Footnotes and citations</a></li>
 <li><a class="nav-link" href="#footnotes"><span class="header-section-number">5.1</span> Footnotes</a></li>
-<li><a class="nav-link" href="#citations"><span class="header-section-number">5.2</span> Citations</a></li>
+<li><a class="nav-link" href="#citations-1"><span class="header-section-number">5.2</span> Citations</a></li>
 </ul>
 
       <div class="book-extra">
@@ -130,7 +131,7 @@ Note that the <code>.bib</code> files need to be listed in the index.Rmd with th
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Introduction to LaTeX</strong>" was written by Zak Varty. It was last built on 2022-07-25.</p>
+    <p>"<strong>Introduction to LaTeX</strong>" was written by Zak Varty. It was last built on 2022-07-26.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

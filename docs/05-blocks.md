@@ -49,5 +49,16 @@ It is up to the user to define the appearance of these blocks for LaTeX output.
 
 You may also use: `.rmdcaution`, `.rmdimportant`, `.rmdtip`, or `.rmdwarning` as the block name.
 
+::: {.rmdcaution}
+You can use **markdown** inside a  caution block.
+:::
+
+::: {.rmdimportant}
+You can use **markdown** inside a  caution block.
+:::
+
+::: {.rmdtip}
+You can use **markdown** inside a  caution block.
+:::
 
 The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html

@@ -1,22 +1,25 @@
 --- 
-title: "Introduction to LaTeX"
+title: "Learn LaTeX"
 author: "Zak Varty"
-date: "2022-07-25"
+date: "2022-07-26"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
 url: https://latex-notes.zakvarty.com/
-# cover-image: path to the social sharing image like images/cover.jpg
+cover-image: images/learn-latex-logo.jpg
 description: |
-  A minimal introduction to programmatic typesetting using $\LaTeX$.
+  An introduction to programmatic typesetting using LaTeX.
 biblio-style: apalike
 csl: chicago-fullnote-bibliography.csl
 ---
 
-# About
+# About {-}
+
+::: small_right
+<img src="images/learn-LaTeX-logo.jpg" alt="Logo"/>
+:::
 
 This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
-
 
 
 
@@ -33,6 +36,17 @@ y = mx  + c
 (\#eq:binom)
 \end{equation}
 
+
+## What is this book about? 
+
+- LaTeX is very flexible: many ways to do the same thing. I will show you how I would go about it, but YMMV and you may have an equally valid or better way to do the same things. If so, great!
+
+
+## Who is it for? 
+
+## What to expect? 
+
+- Lots of practice, examples and exercises
 
 ## Usage 
 

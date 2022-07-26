@@ -22,28 +22,6 @@
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
-<style type="text/css">
-    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-        }
-    .hanging div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
-    }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
-    }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }
-  </style>
 <link rel="stylesheet" href="style.css">
 </head>
 <body data-spy="scroll" data-target="#toc">
@@ -67,10 +45,11 @@
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
 <li><a class="" href="index.html"><span class="header-section-number">1</span> About</a></li>
-<li><a class="" href="hello-bookdown.html"><span class="header-section-number">2</span> Hello bookdown</a></li>
-<li><a class="" href="cross.html"><span class="header-section-number">3</span> Cross-references</a></li>
-<li><a class="" href="parts.html"><span class="header-section-number">4</span> Parts</a></li>
-<li><a class="" href="footnotes-and-citations.html"><span class="header-section-number">5</span> Footnotes and citations</a></li>
+<li class="book-part">Part I</li>
+<li><a class="" href="getting-started.html"><span class="header-section-number">2</span> Getting started</a></li>
+<li><a class="" href="text.html"><span class="header-section-number">3</span> Hello World! LaTeX Text</a></li>
+<li><a class="" href="beautiful-math-in-latex.html"><span class="header-section-number">4</span> Beautiful Math in LaTeX</a></li>
+<li><a class="" href="figures-tables-and-diagrams.html"><span class="header-section-number">5</span> Figures, Tables and Diagrams</a></li>
 <li><a class="active" href="blocks.html"><span class="header-section-number">6</span> Blocks</a></li>
 <li><a class="" href="sharing-your-book.html"><span class="header-section-number">7</span> Sharing your book</a></li>
 <li><a class="" href="references.html">References</a></li>
@@ -126,12 +105,21 @@ and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</
 </div>
 <p>It is up to the user to define the appearance of these blocks for LaTeX output.</p>
 <p>You may also use: <code>.rmdcaution</code>, <code>.rmdimportant</code>, <code>.rmdtip</code>, or <code>.rmdwarning</code> as the block name.</p>
+<div class="rmdcaution">
+<p>You can use <strong>markdown</strong> inside a caution block.</p>
+</div>
+<div class="rmdimportant">
+<p>You can use <strong>markdown</strong> inside a caution block.</p>
+</div>
+<div class="rmdtip">
+<p>You can use <strong>markdown</strong> inside a caution block.</p>
+</div>
 <p>The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: <a href="https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html" class="uri">https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html</a></p>
 
 </div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="footnotes-and-citations.html"><span class="header-section-number">5</span> Footnotes and citations</a></div>
+<div class="prev"><a href="figures-tables-and-diagrams.html"><span class="header-section-number">5</span> Figures, Tables and Diagrams</a></div>
 <div class="next"><a href="sharing-your-book.html"><span class="header-section-number">7</span> Sharing your book</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
@@ -157,7 +145,7 @@ and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Introduction to LaTeX</strong>" was written by Zak Varty. It was last built on 2022-07-25.</p>
+    <p>"<strong>Introduction to LaTeX</strong>" was written by Zak Varty. It was last built on 2022-07-26.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

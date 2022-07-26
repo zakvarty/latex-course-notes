@@ -110,32 +110,15 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
-  pdftitle={Introduction to LaTeX},
+  pdftitle={Learn LaTeX},
   pdfauthor={Zak Varty},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
-\title{Introduction to LaTeX}
+\title{Learn LaTeX}
 \author{Zak Varty}
-\date{2022-07-25}
+\date{2022-07-26}
 
-\usepackage{amsthm}
-\newtheorem{theorem}{Theorem}[chapter]
-\newtheorem{lemma}{Lemma}[chapter]
-\newtheorem{corollary}{Corollary}[chapter]
-\newtheorem{proposition}{Proposition}[chapter]
-\newtheorem{conjecture}{Conjecture}[chapter]
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[chapter]
-\theoremstyle{definition}
-\newtheorem{example}{Example}[chapter]
-\theoremstyle{definition}
-\newtheorem{exercise}{Exercise}[chapter]
-\theoremstyle{definition}
-\newtheorem{hypothesis}{Hypothesis}[chapter]
-\theoremstyle{remark}
-\newtheorem*{remark}{Remark}
-\newtheorem*{solution}{Solution}
 \begin{document}
 \maketitle
 
@@ -144,7 +127,8 @@
 \tableofcontents
 }
 \hypertarget{about}{%
-\chapter{About}\label{about}}
+\chapter*{About}\label{about}}
+\addcontentsline{toc}{chapter}{About}
 
 This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports; for example, a math equation \(a^2 + b^2 = c^2\).
 
@@ -162,6 +146,27 @@ Which will produce something like this:
 y = mx  + c 
 \label{eq:binom}
 \end{equation}
+
+\hypertarget{what-is-this-book-about}{%
+\section{What is this book about?}\label{what-is-this-book-about}}
+
+\begin{itemize}
+\tightlist
+\item
+  LaTeX is very flexible: many ways to do the same thing. I will show you how I would go about it, but YMMV and you may have an equally valid or better way to do the same things. If so, great!
+\end{itemize}
+
+\hypertarget{who-is-it-for}{%
+\section{Who is it for?}\label{who-is-it-for}}
+
+\hypertarget{what-to-expect}{%
+\section{What to expect?}\label{what-to-expect}}
+
+\begin{itemize}
+\tightlist
+\item
+  Lots of practice, examples and exercises
+\end{itemize}
 
 \hypertarget{usage}{%
 \section{Usage}\label{usage}}
@@ -206,24 +211,242 @@ As you work, you may start a local server to live preview this HTML book. This p
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{hello-bookdown}{%
-\chapter{Hello bookdown}\label{hello-bookdown}}
+\hypertarget{part-part-i}{%
+\part{Part I}\label{part-part-i}}
 
-All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (\texttt{\#}) per .Rmd file.
+\hypertarget{getting-started}{%
+\chapter{Getting started}\label{getting-started}}
 
-\hypertarget{a-section}{%
-\section{A section}\label{a-section}}
+\hypertarget{what-is-latex}{%
+\section{What is LaTeX?}\label{what-is-latex}}
 
-All chapter sections start with a second-level (\texttt{\#\#}) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
+\hypertarget{why-latex}{%
+\section{Why LaTeX?}\label{why-latex}}
 
-\hypertarget{an-unnumbered-section}{%
-\subsection*{An unnumbered section}\label{an-unnumbered-section}}
-\addcontentsline{toc}{subsection}{An unnumbered section}
+\begin{itemize}
+\tightlist
+\item
+  Maths
+\item
+  Big documents
+\item
+  WYWIWYG not WYSIWYG
+\item
+  Plain text plays well with version control
+\item
+  Been around for a long time and stable
+\item
+  Programmatic:
 
-Chapters and sections are numbered by default. To un-number a heading, add a \texttt{\{.unnumbered\}} or the shorter \texttt{\{-\}} at the end of the heading, like in this section.
+  \begin{itemize}
+  \tightlist
+  \item
+    much more control than markdown
+  \item
+    can define your own macros to take some of the faff out of it
+  \end{itemize}
+\item
+  Journals and Books
+\end{itemize}
 
-\hypertarget{cross}{%
-\chapter{Cross-references}\label{cross}}
+what to prepare yourself for
+
+\begin{itemize}
+\tightlist
+\item
+  some very pretty output
+\item
+  some very ugly error messages
+\item
+  a steep but rewarding learning curve
+\item
+  lots of googling
+\end{itemize}
+
+Effictively learning a programming language, but where the output is a pretty document.
+
+\hypertarget{getting-latex-ready}{%
+\section{Getting LaTeX ready}\label{getting-latex-ready}}
+
+\begin{itemize}
+\tightlist
+\item
+  Online vs Offline
+\item
+  Recommend using Overleaf, at least until you get started
+\item
+  Worry about installing locally when you want to write on a train or a plane.
+\item
+  Link to installation instructions
+\item
+  IDE vs vim vs commandline
+\end{itemize}
+
+\hypertarget{where-to-look-for-help}{%
+\section{Where to look for help?}\label{where-to-look-for-help}}
+
+\begin{itemize}
+\tightlist
+\item
+  The Not so short introduction to LaTeX2e
+\item
+  Google (and friends)
+\item
+  Books
+\end{itemize}
+
+\hypertarget{a-note-on-directory-structure}{%
+\section{A Note on Directory Structure}\label{a-note-on-directory-structure}}
+
+\begin{itemize}
+\tightlist
+\item
+  Good to know where things are on your computer
+\item
+  Don't work in Downloads or some other ridiculous location
+\item
+  Either have a single directory (maybe Documents/writing) to store all of your tex documents in one place
+\item
+  If using Overleaf this is effectively what you are doing, but the documents are all stored on the cloud rather than on your computer.
+\item
+  On a related note - just like you should have backups of word documents incase you spill your pint of squash on your laptop, you should keep your LaTeX files in the cloud or with backups.
+\item
+  The other apprach, if you are wriing on on exciting project, is to have all files to do with that project in Documents/\ldots/exciting-project/writing
+\item
+  This is because in the process of going from plain text to a beautiful pdf, LaTeX will make some intermediate files (which you can delete safely) that contain advanced diagnoistic information when thing go wrong. You can set things up so that LaTeX will tidy up after itself, but I wouldn't recommend it. Just ignore the extra files until you ever need them.
+\end{itemize}
+
+\hypertarget{text}{%
+\chapter{Hello World! LaTeX Text}\label{text}}
+
+\hypertarget{structure-of-a-latex-document}{%
+\section{Structure of a LaTeX Document}\label{structure-of-a-latex-document}}
+
+\hypertarget{hello-world}{%
+\section{Hello world}\label{hello-world}}
+
+\hypertarget{a-basic-preamble}{%
+\section{A Basic Preamble}\label{a-basic-preamble}}
+
+\hypertarget{structure}{%
+\section{Structure}\label{structure}}
+
+\begin{itemize}
+\item
+  bold
+\item
+  italic
+\item
+  underline
+\item
+  monospace
+\item
+  cross through
+\item
+  Paragraph breaks
+\item
+  Sections
+\item
+  Subsections
+\item
+  lists:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    numbered\\
+  \item
+    unnumbered
+  \item
+    sublists
+  \item
+    subsublists
+  \end{itemize}
+\item
+  footnotes
+\end{itemize}
+
+\hypertarget{lorem-ipsum}{%
+\section{Lorem Ipsum}\label{lorem-ipsum}}
+
+A longer example text. Give as .txt and ask to format as seen in example pdf.
+
+\hypertarget{labelling-and-referencing}{%
+\section{Labelling and Referencing}\label{labelling-and-referencing}}
+
+\begin{itemize}
+\tightlist
+\item
+  labelling sections and subsections
+\item
+  suggested naming structure ch-intro sec-intro-labelling
+\item
+  Move sections around and numbers fix themselves (on double compiling)
+\item
+  Adding hyperlinks with the hyperref package
+\end{itemize}
+
+\hypertarget{citations}{%
+\section{Citations}\label{citations}}
+
+\begin{itemize}
+\tightlist
+\item
+  the .bib file \& its structure
+
+  \begin{itemize}
+  \tightlist
+  \item
+    recommend authorYYYYkeyword
+  \item
+    recommend keeping aphabetical order within bib file
+  \item
+    sorting by topic seems like a good idea when you start but there are alsways awkward in-between papers
+  \end{itemize}
+\item
+  How to get bib references from google scholar
+\item
+  Can also get them from other citation managers such as Mendeley and Evernote
+\item
+  Can also create an entry manually yourself
+\item
+  Can edit entries manually yourself
+\item
+  This is important so that you can fix the dodgy references (Coles example)
+\item
+  Citing Websites
+\item
+  Citing ArXiV preprints
+\item
+  Citing other materials
+\item
+  what to add to the preamble and the end of the document
+\item
+  Where to go for extra help - the Overleaf help page is very good on this.
+\end{itemize}
+
+\hypertarget{tips-for-writing-longer-documents}{%
+\section{Tips for writing longer documents}\label{tips-for-writing-longer-documents}}
+
+\begin{itemize}
+\tightlist
+\item
+  Can skip on first reading
+\item
+  multiple tex files
+
+  \begin{itemize}
+  \tightlist
+  \item
+    file for preamble
+  \item
+    file for main text structure
+  \item
+    separate file for each section/chapter
+  \item
+    include and input
+  \end{itemize}
+\end{itemize}
 
 Cross-references make it easier for your readers to find and link to elements in your book.
 
@@ -271,7 +494,7 @@ See Figure \ref{fig:nice-fig}.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{02-cross-refs_files/figure-latex/nice-fig-1} 
+{\centering \includegraphics[width=0.8\linewidth]{02-text_files/figure-latex/nice-fig-1} 
 
 }
 
@@ -312,8 +535,31 @@ temperature & pressure\\
 \end{tabular}
 \end{table}
 
-\hypertarget{parts}{%
-\chapter{Parts}\label{parts}}
+\hypertarget{beautiful-math-in-latex}{%
+\chapter{Beautiful Math in LaTeX}\label{beautiful-math-in-latex}}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+\begin{itemize}
+\item
+  This is what we are really here for and where things start to get really fun!
+\item
+  several ways of writnig math, all of which come into some sort of math environment.
+\item
+  first is inline math, that is used for when you are talking about a mathematical object or expression in the middle of a sentence. The math text should be ``wrapped'' in dollar signs.
+\item
+  For displayed math there are several options: wrap in double dollar signs, wrap with \texttt{\textbackslash{}{[}} and \texttt{\textbackslash{}{]}} or explicitly use an equation environment.
+\item
+  Displayed equataions by default get numbered and you can label and reference them in the same way as sections and subsections earlier. Remember, it might take two compilations to get these references to appear.
+\item
+  Only equations that you mention in the text should get numbers. To typeset a displayed equation without a number you can add \texttt{\textbackslash{}nonumber} to any of the above options or you can use the \texttt{equation*} environment instead.
+\end{itemize}
+
+\hypertarget{some-oddments}{%
+\section{Some oddments}\label{some-oddments}}
+
+\(\times\) is \texttt{\$times\$}.
 
 You can add parts to organize one or more book chapters together. Parts can be inserted at the top of an .Rmd file, before the first-level chapter heading in that same file.
 
@@ -323,111 +569,252 @@ Add an unnumbered part: \texttt{\#\ (PART\textbackslash{}*)\ Act\ one\ \{-\}} (f
 
 Add an appendix as a special kind of un-numbered part: \texttt{\#\ (APPENDIX)\ Other\ stuff\ \{-\}} (followed by \texttt{\#\ A\ chapter}). Chapters in an appendix are prepended with letters instead of numbers.
 
-\hypertarget{footnotes-and-citations}{%
-\chapter{Footnotes and citations}\label{footnotes-and-citations}}
+\hypertarget{figures-tables-and-diagrams}{%
+\chapter{Figures, Tables and Diagrams}\label{figures-tables-and-diagrams}}
 
-\hypertarget{footnotes}{%
-\section{Footnotes}\label{footnotes}}
+\hypertarget{figures}{%
+\section{Figures}\label{figures}}
 
-Footnotes are put inside the square brackets after a caret \texttt{\^{}{[}{]}}. Like this one \footnote{This is a footnote.}.
+\begin{itemize}
+\item
+  floating environments {[}htbp!{]}
+\item
+  figure environments
+\item
+  includegraphics
+\item
+  labels and captions
+\item
+  subfigures
+\item
+  referencing subfigures
+\item
+  Graphics types
+\item
+  Exporting from R (and Python?)
+\item
+  Draft mode
+\end{itemize}
 
-\hypertarget{citations}{%
-\section{Citations}\label{citations}}
+\hypertarget{tables}{%
+\section{Tables}\label{tables}}
 
-Reference items in your bibliography file(s) using \texttt{@key}.
+\begin{itemize}
+\item
+  tabular and table environments
+\item
+  labels and captions as for figures
+\item
+  multirow and multicolumn
+\item
+  Large horizontal tables
+\item
+  coloured cells
+\item
+  rotated text for column headings
+\item
+  Link to table generator
+\end{itemize}
 
-For example, we are using the \textbf{bookdown} package \citep{R-bookdown} (check out the last code chunk in index.Rmd to see how this citation key was added) in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015} (this citation was added manually in an external file book.bib).
-Note that the \texttt{.bib} files need to be listed in the index.Rmd with the YAML \texttt{bibliography} key.
+\hypertarget{diagrams}{%
+\section{Diagrams}\label{diagrams}}
 
-The \texttt{bs4\_book} theme makes footnotes appear inline when you click on them. In this example book, we added \texttt{csl:\ chicago-fullnote-bibliography.csl} to the \texttt{index.Rmd} YAML, and include the \texttt{.csl} file. To download a new style, we recommend: \url{https://www.zotero.org/styles/}
+\begin{itemize}
+\tightlist
+\item
+  picture and tikz picture
+\item
+  DAG example
+\end{itemize}
 
-The RStudio Visual Markdown Editor can also make it easier to insert citations: \url{https://rstudio.github.io/visual-markdown-editing/\#/citations}
+\hypertarget{code-listings}{%
+\section{Code Listings}\label{code-listings}}
+
+\begin{itemize}
+\tightlist
+\item
+  verb and verbatim
+\item
+  lstlistings
+\end{itemize}
+
+\hypertarget{algorithms}{%
+\section{Algorithms}\label{algorithms}}
+
+\begin{itemize}
+\tightlist
+\item
+  list environment
+\item
+  algorithm2e
+\end{itemize}
 
 \hypertarget{blocks}{%
-\chapter{Blocks}\label{blocks}}
+\section{Blocks}\label{blocks}}
 
-\hypertarget{equations}{%
-\section{Equations}\label{equations}}
+\begin{itemize}
+\tightlist
+\item
+  Note, Caution, Important, Tip, Warning
+\end{itemize}
 
-Here is an equation.
+\hypertarget{structure-1}{%
+\chapter{Structure}\label{structure-1}}
 
-\begin{equation} 
-  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
-  \label{eq:binom}
-\end{equation}
+\hypertarget{document-types}{%
+\section{Document types}\label{document-types}}
 
-You may refer to using \texttt{\textbackslash{}@ref(eq:binom)}, like see Equation \eqref{eq:binom}.
+\begin{itemize}
+\tightlist
+\item
+  article
+\item
+  report
+\item
+  book
+\end{itemize}
 
-\hypertarget{theorems-and-proofs}{%
-\section{Theorems and proofs}\label{theorems-and-proofs}}
+\hypertarget{formatting}{%
+\section{Formatting}\label{formatting}}
 
-Labeled theorems can be referenced in text using \texttt{\textbackslash{}@ref(thm:tri)}, for example, check out this smart theorem \ref{thm:tri}.
+\hypertarget{paper-and-font-size}{%
+\subsection{Paper and Font size}\label{paper-and-font-size}}
 
-\begin{theorem}
-\protect\hypertarget{thm:tri}{}\label{thm:tri}For a right triangle, if \(c\) denotes the \emph{length} of the hypotenuse
-and \(a\) and \(b\) denote the lengths of the \textbf{other} two sides, we have
-\[a^2 + b^2 = c^2\]
-\end{theorem}
+\hypertarget{margins}{%
+\subsection{Margins}\label{margins}}
 
-Read more here \url{https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html}.
+\hypertarget{columns}{%
+\subsection{Columns}\label{columns}}
 
-\hypertarget{callout-blocks}{%
-\section{Callout blocks}\label{callout-blocks}}
+\hypertarget{title-page}{%
+\subsection{Title Page}\label{title-page}}
 
-The \texttt{bs4\_book} theme also includes special callout blocks, like this \texttt{.rmdnote}.
+\hypertarget{conditional-evaluation}{%
+\section{Conditional Evaluation}\label{conditional-evaluation}}
 
-You can use \textbf{markdown} inside a block.
+\hypertarget{part-part-ii---presentations}{%
+\part{Part II - Presentations}\label{part-part-ii---presentations}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{head}\NormalTok{(beaver1, }\AttributeTok{n =} \DecValTok{5}\NormalTok{)}
-\CommentTok{\#\textgreater{}   day time  temp activ}
-\CommentTok{\#\textgreater{} 1 346  840 36.33     0}
-\CommentTok{\#\textgreater{} 2 346  850 36.34     0}
-\CommentTok{\#\textgreater{} 3 346  900 36.35     0}
-\CommentTok{\#\textgreater{} 4 346  910 36.42     0}
-\CommentTok{\#\textgreater{} 5 346  920 36.55     0}
-\end{Highlighting}
-\end{Shaded}
+\hypertarget{beamer-presentations}{%
+\chapter{Beamer Presentations}\label{beamer-presentations}}
 
-It is up to the user to define the appearance of these blocks for LaTeX output.
+\hypertarget{the-beamer-document-class}{%
+\section{\texorpdfstring{The \texttt{beamer} document class}{The beamer document class}}\label{the-beamer-document-class}}
 
-You may also use: \texttt{.rmdcaution}, \texttt{.rmdimportant}, \texttt{.rmdtip}, or \texttt{.rmdwarning} as the block name.
+\hypertarget{presentation-specific-commands}{%
+\section{Presentation Specific Commands}\label{presentation-specific-commands}}
 
-The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: \url{https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html}
+\begin{itemize}
+\tightlist
+\item
+  \texttt{\textbackslash{}pause}
+\item
+  \texttt{\textbackslash{}alert}
+\item
+  block and exampleblock
+\item
+  aspect ratio of slides
+\end{itemize}
 
-\hypertarget{sharing-your-book}{%
-\chapter{Sharing your book}\label{sharing-your-book}}
+\hypertarget{adding-white-space}{%
+\section{Adding white space}\label{adding-white-space}}
 
-\hypertarget{publishing}{%
-\section{Publishing}\label{publishing}}
+\begin{itemize}
+\tightlist
+\item
+  adding space between bullet points
+\item
+  vertical and horizonal whitespace
+\item
+  easy to lose a lot of time here, add all content first then sort spacing
+\end{itemize}
 
-HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
+\hypertarget{multi-column-slides}{%
+\section{Multi-column Slides}\label{multi-column-slides}}
 
-\hypertarget{pages}{%
-\section{404 pages}\label{pages}}
+\begin{itemize}
+\tightlist
+\item
+  columns
+\item
+  example left image slide
+\item
+  example right image slide
+\end{itemize}
 
-By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
+\hypertarget{animations}{%
+\section{Animations}\label{animations}}
 
-\hypertarget{metadata-for-sharing}{%
-\section{Metadata for sharing}\label{metadata-for-sharing}}
+\begin{itemize}
+\tightlist
+\item
+  From GIF
+\item
+  From pdf
 
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
+  \begin{itemize}
+  \tightlist
+  \item
+    with buttons
+  \item
+    without buttons
+  \end{itemize}
+\end{itemize}
 
-This \texttt{bs4\_book} provides enhanced metadata for social sharing, so that each chapter shared will have a unique description, auto-generated based on the content.
+\hypertarget{video}{%
+\section{Video}\label{video}}
 
-Specify your book's source repository on GitHub as the \texttt{repo} in the \texttt{\_output.yml} file, which allows users to view each chapter's source file or suggest an edit. Read more about the features of this output format here:
+\begin{itemize}
+\tightlist
+\item
+  From the internet
+\item
+  Local
+\end{itemize}
 
-\url{https://pkgs.rstudio.com/bookdown/reference/bs4_book.html}
+\hypertarget{links-to-slide-templates}{%
+\section{Links to slide templates}\label{links-to-slide-templates}}
 
-Or use:
+\begin{itemize}
+\tightlist
+\item
+  Include basic beamer template
+\item
+  Overleaf
+\end{itemize}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{bs4\_book}
-\end{Highlighting}
-\end{Shaded}
+\hypertarget{part-part-iii---posters}{%
+\part{Part III - Posters}\label{part-part-iii---posters}}
 
+\hypertarget{beamer-posters}{%
+\chapter{Beamer Posters}\label{beamer-posters}}
+
+\begin{itemize}
+\item
+  Effectively one big Beamer slide
+
+  \begin{itemize}
+  \tightlist
+  \item
+    combination of columns and blocks
+  \item
+    tip: include number in block titles so that reading order is obvious
+  \item
+    Figures and Tables should still be referenced in text
+  \end{itemize}
+\item
+  Style files for pretification
+\item
+  Setting paper size and orientation
+\item
+  Changing colour theme
+\item
+  Making your own colour theme
+\item
+  Header and Footer
+\item
+  Other templates
+\end{itemize}
 
   \bibliography{book.bib,packages.bib}
 
